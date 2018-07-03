@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/unit/ChanceTest.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rectangle/Rectangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/rectangle/Rectangle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/RectangleTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/RectangleTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,23 +15,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RectangleTest.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/unit/RectangleTest.kt">
+      <file leaf-file-name="ChanceTest.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="25" column="74" selection-start-line="25" selection-start-column="74" selection-end-line="25" selection-end-column="74" />
+            <state relative-caret-position="300">
+              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
               <folding>
-                <element signature="e#155#282#0" expanded="true" />
+                <element signature="e#155#251#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rectangle.kt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.kt">
+      <file leaf-file-name="Chance.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+            <state relative-caret-position="150">
+              <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -43,6 +42,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -56,6 +56,8 @@
         <option value="$PROJECT_DIR$/test/RectangleTest.kt" />
         <option value="$PROJECT_DIR$/test/unit/RectangleTest.kt" />
         <option value="$PROJECT_DIR$/src/rectangle/Rectangle.kt" />
+        <option value="$PROJECT_DIR$/test/unit/ChanceTest.kt" />
+        <option value="$PROJECT_DIR$/src/chance/Chance.kt" />
       </list>
     </option>
   </component>
@@ -73,6 +75,9 @@
     <option name="y" value="70" />
     <option name="width" value="2729" />
     <option name="height" value="1658" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -93,6 +98,12 @@
               <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
@@ -122,6 +133,8 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -129,6 +142,14 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="unit" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -208,9 +229,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.03 at 11h 54m 58s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.03 at 11h 57m 43s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
@@ -238,6 +256,9 @@
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.03 at 13h 11m 27s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.03 at 13h 26m 35s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
@@ -257,7 +278,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21061268" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21061268" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -347,8 +368,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        <state relative-caret-position="90">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+          <folding>
+            <element signature="e#155#251#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

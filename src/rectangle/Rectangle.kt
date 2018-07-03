@@ -5,7 +5,7 @@
  */
 package rectangle
 
-// Understands...
+// Understands a four-sided polygon with sides at right angles
 class Rectangle (height: Number, width: Number) {
 
     init {
