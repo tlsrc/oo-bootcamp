@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/chance/Chance.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/chance/Chance.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/unit/ChanceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/ChanceTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -15,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ChanceTest.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ChanceTest.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="240">
+              <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
               <folding>
                 <element signature="e#155#251#0" expanded="true" />
               </folding>
@@ -27,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chance.kt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Chance.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -373,20 +372,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding>
+            <element signature="e#155#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-          <folding>
-            <element signature="e#155#251#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

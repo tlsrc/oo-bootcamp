@@ -11,20 +11,25 @@ import org.junit.jupiter.api.Test
 
 // Confirms that Chance operates correctly
 internal class ChanceTest {
+    private val certain = Chance(1)
+    private val likely = Chance(0.75)
+    private val equallyLikely = Chance(0.5)
+    private val unlikely = Chance(0.25)
+    private val impossible = Chance(0)
 
     @Test fun equality() {
-        assertEquals(Chance(0.75), Chance(0.75))
-        assertNotEquals(Chance(0.75), Chance(0.25))
-        assertNotEquals(Chance(0.75), "a string")
-        assertNotEquals(Chance(0.75), null)
+        assertEquals(likely, Chance(0.75))
+        assertNotEquals(likely, unlikely)
+        assertNotEquals(likely, "a string")
+        assertNotEquals(likely, null)
     }
 
     @Test fun `hash set support`() {
-        assert(hashSetOf<Chance>(Chance(0.75)).contains(Chance(0.75)))
+        assert(hashSetOf<Chance>(likely).contains(Chance(0.75)))
     }
 
     @Test fun `hash code`() {
-        assertEquals(Chance(0.75).hashCode(), Chance(0.75).hashCode())
+        assertEquals(likely.hashCode(), Chance(0.75).hashCode())
     }
 
 }
