@@ -6,5 +6,17 @@
 package rectangle
 
 // Understands...
-class Rectangle {
+class Rectangle (height: Number, width: Number) {
+
+    init {
+        if (height.toDouble() <= 0.0 || width.toDouble() <= 0)
+            throw IllegalArgumentException("Dimensions must be > zero")
+    }
+
+    private val height: Double = height.toDouble()
+    private val width: Double = width.toDouble()
+
+    val area: Double get() = width * height
+
+    fun perimeter() = 2 * (width + height)
 }
