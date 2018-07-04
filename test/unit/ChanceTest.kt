@@ -6,17 +6,18 @@
 package unit
 
 import chance.Chance
+import chance.chance
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import kotlin.test.assertFailsWith
 
 // Confirms that Chance operates correctly
 internal class ChanceTest {
-    private val certain = Chance(1)
-    private val likely = Chance(0.75)
-    private val equallyLikely = Chance(0.5)
-    private val unlikely = Chance(0.25)
-    private val impossible = Chance(0)
+    private val certain = 1.chance
+    private val likely = 0.75.chance
+    private val equallyLikely = 0.5.chance
+    private val unlikely = 0.25.chance
+    private val impossible = 0.chance
 
     @Test fun equality() {
         assertEquals(likely, Chance(0.75))
@@ -26,7 +27,7 @@ internal class ChanceTest {
     }
 
     @Test fun `hash set support`() {
-        assert(hashSetOf<Chance>(likely).contains(Chance(0.75)))
+        assert(hashSetOf(likely).contains(Chance(0.75)))
     }
 
     @Test fun `hash code`() {
