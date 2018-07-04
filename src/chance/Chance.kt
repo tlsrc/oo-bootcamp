@@ -7,6 +7,7 @@ package chance
 
 // Understands the likelihood of something occurring
 class Chance(likelihoodAsFraction: Number) {
+    private val certainFraction = 1.0
     private val fraction = likelihoodAsFraction.toDouble()
 
     override fun equals(other: Any?): Boolean {
@@ -16,4 +17,6 @@ class Chance(likelihoodAsFraction: Number) {
     private fun equals(other: Chance) = this.fraction == other.fraction
 
     override fun hashCode() = fraction.hashCode()
+
+    operator fun not() = Chance(certainFraction - fraction)
 }
