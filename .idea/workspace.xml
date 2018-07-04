@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/ChanceTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/ChanceTest.kt" afterDir="false" />
-    </list>
+    <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +15,8 @@
       <file leaf-file-name="ChanceTest.kt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="708">
-              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            <state relative-caret-position="289">
+              <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
               <folding>
                 <element signature="e#155#251#0" expanded="true" />
               </folding>
@@ -30,8 +27,8 @@
       <file leaf-file-name="Chance.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="420">
+              <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -64,8 +61,8 @@
         <option value="$PROJECT_DIR$/test/RectangleTest.kt" />
         <option value="$PROJECT_DIR$/test/unit/RectangleTest.kt" />
         <option value="$PROJECT_DIR$/src/rectangle/Rectangle.kt" />
-        <option value="$PROJECT_DIR$/src/chance/Chance.kt" />
         <option value="$PROJECT_DIR$/test/unit/ChanceTest.kt" />
+        <option value="$PROJECT_DIR$/src/chance/Chance.kt" />
       </list>
     </option>
   </component>
@@ -92,9 +89,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -134,6 +130,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,12 +234,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.03 at 13h 26m 35s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.03 at 16h 18m 38s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.03 at 16h 20m 09s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
@@ -267,12 +258,20 @@
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.04 at 11h 16m 08s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.04 at 11h 43m 59s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.04 at 11h 48m 02s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="127" y="31" width="1610" height="926" extended-state="0" />
+    <frame x="126" y="30" width="1611" height="927" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -284,7 +283,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24122807" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24107702" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -299,7 +298,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +307,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding>
+            <element signature="e#155#251#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1260">
@@ -404,15 +419,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="420">
+          <caret line="18" column="49" lean-forward="true" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/ChanceTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="708">
-          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="289">
+          <caret line="47" column="49" lean-forward="true" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
           <folding>
             <element signature="e#155#251#0" expanded="true" />
           </folding>

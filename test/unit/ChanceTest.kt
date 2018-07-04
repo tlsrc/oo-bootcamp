@@ -8,6 +8,7 @@ package unit
 import chance.Chance
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import kotlin.test.assertFailsWith
 
 // Confirms that Chance operates correctly
 internal class ChanceTest {
@@ -54,5 +55,10 @@ internal class ChanceTest {
         assertEquals(likely.or(unlikely), unlikely.or(likely))
         assertEquals(likely, likely.or(impossible))
         assertEquals(certain, certain.or(likely))
+    }
+
+    @Test fun `invalid fractions`() {
+        assertFailsWith(IllegalArgumentException::class) { Chance(1.01)}
+        assertFailsWith(IllegalArgumentException::class) { Chance(-0.01)}
     }
 }

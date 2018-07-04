@@ -10,6 +10,11 @@ class Chance(likelihoodAsFraction: Number) {
     private val certainFraction = 1.0
     private val fraction = likelihoodAsFraction.toDouble()
 
+    init {
+        if (fraction !in 0.0..1.0)
+            throw IllegalArgumentException("Fraction must be between 0.0 and 1.0 inclusive")
+    }
+
     override fun equals(other: Any?): Boolean {
         return this === other || other is Chance && this.equals(other)
     }
