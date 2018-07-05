@@ -5,19 +5,8 @@
  */
 package quantity
 
-import kotlin.reflect.jvm.internal.impl.load.kotlin.JvmType
-
 // Understands a particular measurement
-class Quantity(amount: Number, private val unit: Any?) {
-    companion object {
-        val teaspoon = Object()
-        val tablespoon = Object()
-        val ounce = Object()
-        val cup = Object()
-        val pint = Object()
-        val quart = Object()
-        val gallon = Object()
-    }
+class Quantity internal constructor(amount: Number, private val unit: Unit) {
 
     private val amount = amount.toDouble()
 
@@ -25,7 +14,13 @@ class Quantity(amount: Number, private val unit: Any?) {
         return this === other || other is Quantity && this.equals(other)
     }
 
-    private fun equals(other: Quantity): Boolean {
-        return this.amount == other.amount && this.unit == other.unit
+    private fun equals(other: Quantity) = this.amount == convertedAmount(other)
+
+    override fun hashCode(): Int {
+        return unit.hashCode(amount)
     }
+
+    private fun convertedAmount(other: Quantity) = this.unit.convertedAmount(other.amount, other.unit)
+
+
 }

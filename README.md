@@ -1,5 +1,5 @@
-# oo_boot_camp_2018-06-04_java
-Copyright (c) 2018 by Fred George
+# oo_boot_camp_2018-07-03_kotlin
+Copyright (c) 2018 by Fred George.
 May be used freely except for training; license required for training.
 
 OO Boot Camp using Kotlin for Canadian client, 3-13 July 2018

@@ -7,19 +7,30 @@ package unit
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
-import quantity.Quantity
+import quantity.cups
+import quantity.tablespoons
+import quantity.teaspoons
 
 // Ensures Quantity operates correctly
 class QuantityTest {
 
     @Test fun `equality of like units`() {
-        assertEquals(Quantity(8, Quantity.tablespoon), Quantity(8, Quantity.tablespoon))
-        assertNotEquals(Quantity(8, Quantity.tablespoon), Quantity(6, Quantity.tablespoon))
-        assertNotEquals(Quantity(8, Quantity.tablespoon), "a string")
-        assertNotEquals(Quantity(8, Quantity.tablespoon), null)
+        assertEquals(8.tablespoons, 8.tablespoons)
+        assertNotEquals(8.tablespoons, 6.tablespoons)
+        assertNotEquals(8.tablespoons, "a string")
+        assertNotEquals(8.tablespoons, null)
     }
-    
+
     @Test fun `equality of unlike units`() {
-        assertNotEquals(Quantity(8, Quantity.tablespoon), Quantity(8, Quantity.teaspoon))
+        assertEquals(8.tablespoons, 0.5.cups)
+        assertNotEquals(8.tablespoons, 8.teaspoons)
+    }
+
+    @Test fun `hash set support`() {
+        assert(hashSetOf(8.tablespoons).contains(0.5.cups))
+    }
+
+    @Test fun `hash code`() {
+        assertEquals(8.tablespoons.hashCode(), 0.5.cups.hashCode())
     }
 }
