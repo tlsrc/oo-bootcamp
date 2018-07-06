@@ -16,6 +16,13 @@ class Unit {
         internal val pint = Unit(2, cup)
         internal val quart = Unit(2, pint)
         internal val gallon = Unit(4, quart)
+
+        internal val inch = Unit()
+        internal val foot = Unit(12, inch)
+        internal val yard = Unit(3, foot)
+        internal val chain = Unit(22, yard)
+        internal val furlong = Unit(10, chain)
+        internal val mile = Unit(8, furlong)
     }
 
     private val baseUnitRatio: Double
@@ -42,3 +49,10 @@ val Number.cups get() = Quantity(this, Unit.cup)
 val Number.pints get() = Quantity(this, Unit.pint)
 val Number.quarts get() = Quantity(this, Unit.quart)
 val Number.gallons get() = Quantity(this, Unit.gallon)
+
+val Number.inches get() = Quantity(this, Unit.inch)
+val Number.feet get() = Quantity(this, Unit.foot)
+val Number.yards get() = Quantity(this, Unit.yard)
+val Number.chains get() = Quantity(this, Unit.chain)
+val Number.furlongs get() = Quantity(this, Unit.furlong)
+val Number.miles get() = Quantity(this, Unit.mile)

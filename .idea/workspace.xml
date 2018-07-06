@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/quantity/Quantity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/quantity/Quantity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quantity/Unit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/quantity/Unit.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/unit/QuantityTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/QuantityTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +20,8 @@
           <file leaf-file-name="QuantityTest.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/unit/QuantityTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="624">
-                  <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+                <state relative-caret-position="550">
+                  <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
                   <folding>
                     <element signature="e#155#305#0" expanded="true" />
                   </folding>
@@ -34,20 +33,20 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="Quantity.kt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Quantity.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
+                <state relative-caret-position="528">
+                  <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Unit.kt" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Unit.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/quantity/Unit.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+                <state relative-caret-position="646">
+                  <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
                 </state>
               </provider>
             </entry>
@@ -91,9 +90,9 @@
         <option value="$PROJECT_DIR$/src/chance/Chance.kt" />
         <option value="$PROJECT_DIR$/test/unit/ChanceTest.kt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/quantity/Unit.kt" />
-        <option value="$PROJECT_DIR$/test/unit/QuantityTest.kt" />
         <option value="$PROJECT_DIR$/src/quantity/Quantity.kt" />
+        <option value="$PROJECT_DIR$/test/unit/QuantityTest.kt" />
+        <option value="$PROJECT_DIR$/src/quantity/Unit.kt" />
       </list>
     </option>
   </component>
@@ -299,12 +298,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="QuantityTest - 2018.07.05 at 09h 58m 34s.xml">
-      <configuration name="QuantityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuantityTest - 2018.07.05 at 09h 58m 49s.xml">
-      <configuration name="QuantityTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QuantityTest - 2018.07.05 at 09h 59m 44s.xml">
       <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
@@ -329,6 +322,12 @@
     <history-entry file="QuantityTest - 2018.07.05 at 14h 36m 11s.xml">
       <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="QuantityTest - 2018.07.06 at 11h 02m 28s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="QuantityTest - 2018.07.06 at 11h 04m 21s.xml">
+      <configuration name="QuantityTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
@@ -336,6 +335,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -362,7 +362,6 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,27 +517,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="28" column="35" lean-forward="true" selection-start-line="28" selection-start-column="35" selection-end-line="28" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Unit.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        <state relative-caret-position="646">
+          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/QuantityTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="35" column="47" selection-start-line="35" selection-start-column="47" selection-end-line="35" selection-end-column="47" />
+        <state relative-caret-position="550">
+          <caret line="29" column="58" lean-forward="true" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="58" />
           <folding>
             <element signature="e#155#305#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
         </state>
       </provider>
     </entry>
