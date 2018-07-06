@@ -7,9 +7,7 @@ package unit
 
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
-import quantity.cups
-import quantity.tablespoons
-import quantity.teaspoons
+import quantity.*
 
 // Ensures Quantity operates correctly
 class QuantityTest {
@@ -32,5 +30,11 @@ class QuantityTest {
 
     @Test fun `hash code`() {
         assertEquals(8.tablespoons.hashCode(), 0.5.cups.hashCode())
+    }
+
+    @Test fun arithmetic() {
+        assertEquals(0.5.quarts, 6.tablespoons + 13.ounces)
+        assertEquals((-6).tablespoons, -6.tablespoons)
+        assertEquals(-0.5.pints, 10.tablespoons - 13.ounces)
     }
 }

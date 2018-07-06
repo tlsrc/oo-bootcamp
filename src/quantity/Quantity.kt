@@ -22,5 +22,11 @@ class Quantity internal constructor(amount: Number, private val unit: Unit) {
 
     private fun convertedAmount(other: Quantity) = this.unit.convertedAmount(other.amount, other.unit)
 
+    operator fun plus(other: Quantity) = Quantity(this.amount + convertedAmount(other), this.unit)
 
+    operator fun unaryMinus() = Quantity(-amount, unit)
+
+    operator fun unaryPlus() = this
+
+    operator fun minus(other: Quantity) = this + -other
 }
