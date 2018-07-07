@@ -19,7 +19,6 @@ class Quantity internal constructor(amount: Number, private val unit: Unit) {
     private fun isCompatible(other: Quantity) = this.unit.isCompatible(other.unit)
 
     private fun convertedAmount(other: Quantity): Double {
-        if (!this.isCompatible(other)) throw IllegalArgumentException("Incompatible units")
         return this.unit.convertedAmount(other.amount, other.unit)
     }
 

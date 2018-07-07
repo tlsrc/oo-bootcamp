@@ -23,23 +23,33 @@ class Unit {
         internal val chain = Unit(22, yard)
         internal val furlong = Unit(10, chain)
         internal val mile = Unit(8, furlong)
+
+        internal val celsius = Unit()
+        internal val fahrenheit = Unit(5/9.0, 32, celsius)
     }
 
     private val baseUnit: Unit
     private val baseUnitRatio: Double
+    private val offset: Double
 
     private constructor() {
         baseUnitRatio = 1.0
+        offset = 0.0
         baseUnit = this
     }
 
-    private constructor(relativeRatio: Number, relativeUnit: Unit) {
+    private constructor(relativeRatio: Number, relativeUnit: Unit)
+            : this(relativeRatio, 0.0, relativeUnit)
+
+    private constructor(relativeRatio: Number, offset: Number, relativeUnit: Unit) {
         baseUnitRatio = relativeRatio.toDouble() * relativeUnit.baseUnitRatio
+        this.offset = offset.toDouble()
         baseUnit = relativeUnit.baseUnit
     }
 
     internal fun convertedAmount(otherAmount: Double, other: Unit): Double {
-        return otherAmount * other.baseUnitRatio / this.baseUnitRatio
+        if (!this.isCompatible(other)) throw IllegalArgumentException("Incompatible units")
+        return (otherAmount - other.offset) * other.baseUnitRatio / this.baseUnitRatio + this.offset
     }
 
     internal fun hashCode(amount: Double) = (amount * baseUnitRatio).hashCode()
@@ -61,3 +71,6 @@ val Number.yards get() = Quantity(this, Unit.yard)
 val Number.chains get() = Quantity(this, Unit.chain)
 val Number.furlongs get() = Quantity(this, Unit.furlong)
 val Number.miles get() = Quantity(this, Unit.mile)
+
+val Number.celsius get() = Quantity(this, Unit.celsius)
+val Number.fahrenheit get() = Quantity(this, Unit.fahrenheit)

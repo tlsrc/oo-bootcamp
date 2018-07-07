@@ -54,4 +54,16 @@ class QuantityTest {
             3.chains - 4.tablespoons
         }
     }
+
+    @Test fun temperatures() {
+        assertBidirectionalEquality(0.celsius, 32.fahrenheit)
+        assertBidirectionalEquality(10.celsius, 50.fahrenheit)
+        assertBidirectionalEquality(100.celsius, 212.fahrenheit)
+        assertBidirectionalEquality((-40).celsius, (-40).fahrenheit)
+    }
+
+    private fun assertBidirectionalEquality(left: Quantity, right: Quantity) {
+        assertEquals(left, right)
+        assertEquals(right, left)
+    }
 }
