@@ -30,11 +30,14 @@ class QuantityTest {
     @Test fun `hash set support`() {
         assert(hashSetOf(8.tablespoons).contains(0.5.cups))
         assert(hashSetOf(330.feet).contains(0.5.furlongs))
+        assert(hashSetOf(10.celsius).contains(50.fahrenheit))
     }
 
     @Test fun `hash code`() {
         assertEquals(8.tablespoons.hashCode(), 0.5.cups.hashCode())
         assertEquals(330.feet.hashCode(), 0.5.furlongs.hashCode())
+        assertEquals(10.celsius.hashCode(), 50.fahrenheit.hashCode())
+
     }
 
     @Test fun arithmetic() {

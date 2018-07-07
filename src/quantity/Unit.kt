@@ -52,7 +52,7 @@ class Unit {
         return (otherAmount - other.offset) * other.baseUnitRatio / this.baseUnitRatio + this.offset
     }
 
-    internal fun hashCode(amount: Double) = (amount * baseUnitRatio).hashCode()
+    internal fun hashCode(amount: Double) = ((amount - offset) * baseUnitRatio).hashCode()
 
     fun isCompatible(other: Unit) = this.baseUnit == other.baseUnit
 }
