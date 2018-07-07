@@ -10,17 +10,18 @@ class Quantity internal constructor(amount: Number, private val unit: Unit) {
 
     private val amount = amount.toDouble()
 
-    override fun equals(other: Any?): Boolean {
-        return this === other || other is Quantity && this.equals(other)
+    override fun equals(other: Any?) = this === other || other is Quantity && this.equals(other)
+
+    private fun equals(other: Quantity) = this.isCompatible(other) && this.amount == convertedAmount(other)
+
+    override fun hashCode() = unit.hashCode(amount)
+
+    private fun isCompatible(other: Quantity) = this.unit.isCompatible(other.unit)
+
+    private fun convertedAmount(other: Quantity): Double {
+        if (!this.isCompatible(other)) throw IllegalArgumentException("Incompatible units")
+        return this.unit.convertedAmount(other.amount, other.unit)
     }
-
-    private fun equals(other: Quantity) = this.amount == convertedAmount(other)
-
-    override fun hashCode(): Int {
-        return unit.hashCode(amount)
-    }
-
-    private fun convertedAmount(other: Quantity) = this.unit.convertedAmount(other.amount, other.unit)
 
     operator fun plus(other: Quantity) = Quantity(this.amount + convertedAmount(other), this.unit)
 

@@ -8,6 +8,7 @@ package unit
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import quantity.*
+import kotlin.test.assertFailsWith
 
 // Ensures Quantity operates correctly
 class QuantityTest {
@@ -21,6 +22,7 @@ class QuantityTest {
 
     @Test fun `equality of unlike units`() {
         assertEquals(8.tablespoons, 0.5.cups)
+        assertEquals(1.gallons, 768.teaspoons)
         assertEquals(1.miles, (12 * 5280).inches)
         assertNotEquals(8.tablespoons, 8.teaspoons)
     }
@@ -40,5 +42,16 @@ class QuantityTest {
         assertEquals((-6).tablespoons, -6.tablespoons)
         assertEquals(-0.5.pints, 10.tablespoons - 13.ounces)
         assertEquals(-4.feet, 24.inches - 2.yards)
+    }
+
+    @Test fun crossMetricType()  {
+        assertNotEquals(1.inches, 1.teaspoons)
+        assertNotEquals(4.ounces, 2.feet)
+    }
+
+    @Test fun `incompatible units`() {
+        assertFailsWith(IllegalArgumentException::class) {
+            3.chains - 4.tablespoons
+        }
     }
 }

@@ -25,14 +25,17 @@ class Unit {
         internal val mile = Unit(8, furlong)
     }
 
+    private val baseUnit: Unit
     private val baseUnitRatio: Double
 
     private constructor() {
         baseUnitRatio = 1.0
+        baseUnit = this
     }
 
     private constructor(relativeRatio: Number, relativeUnit: Unit) {
         baseUnitRatio = relativeRatio.toDouble() * relativeUnit.baseUnitRatio
+        baseUnit = relativeUnit.baseUnit
     }
 
     internal fun convertedAmount(otherAmount: Double, other: Unit): Double {
@@ -40,6 +43,8 @@ class Unit {
     }
 
     internal fun hashCode(amount: Double) = (amount * baseUnitRatio).hashCode()
+
+    fun isCompatible(other: Unit) = this.baseUnit == other.baseUnit
 }
 
 val Number.teaspoons get() = Quantity(this, Unit.teaspoon)
