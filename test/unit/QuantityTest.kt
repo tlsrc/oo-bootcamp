@@ -10,7 +10,7 @@ import org.junit.jupiter.api.Test
 import quantity.*
 import kotlin.test.assertFailsWith
 
-// Ensures Quantity operates correctly
+// Ensures RatioQuantity operates correctly
 class QuantityTest {
 
     @Test fun `equality of like units`() {
@@ -65,7 +65,12 @@ class QuantityTest {
         assertBidirectionalEquality((-40).celsius, (-40).fahrenheit)
     }
 
-    private fun assertBidirectionalEquality(left: Quantity, right: Quantity) {
+    @Test fun temperatureArithmetic() {
+        // The following should not compile!
+//         10.celsius - 32.fahrenheit; fail<Any?>("Prior line should not have compiled")
+    }
+
+    private fun assertBidirectionalEquality(left: IntervalQuantity, right: IntervalQuantity) {
         assertEquals(left, right)
         assertEquals(right, left)
     }
