@@ -15,15 +15,18 @@ internal class RectangleTest {
 
     @Test fun area() {
         assertEquals(24.0, Rectangle(4, 6).area)
+        assertEquals(36.0, Rectangle.square(6).area)
     }
 
     @Test fun perimeter() {
         assertEquals(20.0, Rectangle(4, 6).perimeter())
+        assertEquals(24.0, Rectangle.square(6).perimeter())
     }
 
     @Test fun `invalid dimensions`() {
-        assertFailsWith(IllegalArgumentException::class) { Rectangle (0, 6) }
-        assertFailsWith(IllegalArgumentException::class) { Rectangle (4, 0) }
+        assertFailsWith(IllegalArgumentException::class) { Rectangle(0, 6) }
+        assertFailsWith(IllegalArgumentException::class) { Rectangle(4, 0) }
+        assertFailsWith(IllegalArgumentException::class) { Rectangle.square(0) }
     }
 
 }

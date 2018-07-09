@@ -7,6 +7,9 @@ package rectangle
 
 // Understands a four-sided polygon with sides at right angles
 class Rectangle (height: Number, width: Number) {
+    companion object {
+        fun square(dimension: Number) = Rectangle(dimension, dimension)
+    }
 
     init {
         if (height.toDouble() <= 0.0 || width.toDouble() <= 0)
