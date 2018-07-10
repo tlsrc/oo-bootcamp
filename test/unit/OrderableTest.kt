@@ -20,4 +20,10 @@ internal class OrderableTest {
                 Rectangle(3.0, 3.0)).best()!!.area)
         assertNull(emptyList<Rectangle>().best())
     }
+
+    @Test fun `most likely chance`() {
+        assertEquals(Chance(0.75), listOf(
+                Chance(0.5), Chance(0.75), Chance(0.25)).best())
+        assertNull(emptyList<Chance>().best())
+    }
 }

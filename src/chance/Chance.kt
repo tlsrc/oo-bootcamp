@@ -5,8 +5,10 @@
  */
 package chance
 
+import order.Orderable
+
 // Understands the likelihood of something occurring
-class Chance(likelihoodAsFraction: Number) {
+class Chance(likelihoodAsFraction: Number) : Orderable<Chance> {
     private val certainFraction = 1.0
     private val fraction = likelihoodAsFraction.toDouble()
 
@@ -29,6 +31,8 @@ class Chance(likelihoodAsFraction: Number) {
 
     // Implemented with DeMorgan's Law https://en.wikipedia.org/wiki/De_Morgan%27s_laws
     fun or(other: Chance) = !((!this).and(!other))
+
+    override fun isBetterThan(other: Chance) = this.fraction > other.fraction
 }
 
 val Number.chance get() = Chance(this.toDouble())
