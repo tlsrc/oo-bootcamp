@@ -5,8 +5,11 @@
  */
 package quantity
 
+import order.Orderable
+
 // Understands a particular measurement
-class IntervalQuantity internal constructor(amount: Number, private val unit: Unit) {
+open class IntervalQuantity internal constructor(amount: Number, protected val unit: Unit)
+        : Orderable<IntervalQuantity> {
 
     private val amount = amount.toDouble()
 
@@ -18,9 +21,11 @@ class IntervalQuantity internal constructor(amount: Number, private val unit: Un
 
     private fun isCompatible(other: IntervalQuantity) = this.unit.isCompatible(other.unit)
 
-    private fun convertedAmount(other: IntervalQuantity): Double {
+    protected fun convertedAmount(other: IntervalQuantity): Double {
         return this.unit.convertedAmount(other.amount, other.unit)
     }
 
     operator fun unaryPlus() = this
+
+    override fun isBetterThan(other: IntervalQuantity) = this.amount > convertedAmount(other)
 }

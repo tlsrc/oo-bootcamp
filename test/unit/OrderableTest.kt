@@ -9,6 +9,7 @@ import chance.Chance
 import order.best
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import quantity.*
 import rectangle.Rectangle
 
 internal class OrderableTest {
@@ -25,5 +26,13 @@ internal class OrderableTest {
         assertEquals(Chance(0.75), listOf(
                 Chance(0.5), Chance(0.75), Chance(0.25)).best())
         assertNull(emptyList<Chance>().best())
+    }
+
+    @Test fun `largest Quantity`() {
+        assertEquals(2.quarts, listOf(
+                0.2.gallons, 24.ounces, 0.5.gallons, 7.cups).best())
+        assertNull(emptyList<RatioQuantity>().best())
+        assertEquals(100.celsius, listOf(
+                212.fahrenheit, 0.celsius, 50.fahrenheit, (-40).celsius).best())
     }
 }

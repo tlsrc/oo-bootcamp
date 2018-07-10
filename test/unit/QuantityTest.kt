@@ -41,7 +41,7 @@ class QuantityTest {
     }
 
     @Test fun arithmetic() {
-        assertEquals(0.5.quarts, +6.tablespoons + 13.ounces)
+        assertEquals(0.5.quarts, 6.tablespoons + 13.ounces)
         assertEquals((-6).tablespoons, -6.tablespoons)
         assertEquals(-0.5.pints, 10.tablespoons - 13.ounces)
         assertEquals(-4.feet, 24.inches - 2.yards)

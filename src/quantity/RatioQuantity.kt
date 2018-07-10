@@ -5,28 +5,14 @@
  */
 package quantity
 
+import order.Orderable
+
 // Understands a particular measurement
-class RatioQuantity internal constructor(amount: Number, private val unit: Unit) {
-
-    private val amount = amount.toDouble()
-
-    override fun equals(other: Any?) = this === other || other is RatioQuantity && this.equals(other)
-
-    private fun equals(other: RatioQuantity) = this.isCompatible(other) && this.amount == convertedAmount(other)
-
-    override fun hashCode() = unit.hashCode(amount)
-
-    private fun isCompatible(other: RatioQuantity) = this.unit.isCompatible(other.unit)
-
-    private fun convertedAmount(other: RatioQuantity): Double {
-        return this.unit.convertedAmount(other.amount, other.unit)
-    }
+class RatioQuantity internal constructor(amount: Number, unit: Unit) : IntervalQuantity(amount, unit) {   private val amount = amount.toDouble()
 
     operator fun plus(other: RatioQuantity) = RatioQuantity(this.amount + convertedAmount(other), this.unit)
 
     operator fun unaryMinus() = RatioQuantity(-amount, unit)
-
-    operator fun unaryPlus() = this
 
     operator fun minus(other: RatioQuantity) = this + -other
 }

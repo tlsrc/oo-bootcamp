@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quantity/IntervalQuantity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/quantity/IntervalQuantity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quantity/RatioQuantity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/quantity/RatioQuantity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/unit/OrderableTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/OrderableTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,10 +21,11 @@
           <file leaf-file-name="OrderableTest.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/unit/OrderableTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+                <state relative-caret-position="307">
+                  <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
+                    <element signature="e#155#296#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -32,14 +35,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Orderable.kt" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Orderable.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/order/Orderable.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state relative-caret-position="22">
+                  <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="RatioQuantity.kt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/quantity/RatioQuantity.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="264">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="IntervalQuantity.kt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/quantity/IntervalQuantity.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="418">
+                  <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -49,6 +67,15 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="528">
                   <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Chance.kt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="88">
+                  <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
                 </state>
               </provider>
             </entry>
@@ -90,18 +117,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/RectangleTest.kt" />
-        <option value="$PROJECT_DIR$/src/chance/Chance.kt" />
         <option value="$PROJECT_DIR$/test/unit/ChanceTest.kt" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/quantity/Quantity.kt" />
-        <option value="$PROJECT_DIR$/src/quantity/RatioQuantity.kt" />
-        <option value="$PROJECT_DIR$/src/quantity/IntervalQuantity.kt" />
         <option value="$PROJECT_DIR$/src/quantity/Unit.kt" />
         <option value="$PROJECT_DIR$/test/unit/QuantityTest.kt" />
         <option value="$PROJECT_DIR$/test/unit/RectangleTest.kt" />
-        <option value="$PROJECT_DIR$/test/unit/OrderableTest.kt" />
         <option value="$PROJECT_DIR$/src/order/Orderable.kt" />
         <option value="$PROJECT_DIR$/src/rectangle/Rectangle.kt" />
+        <option value="$PROJECT_DIR$/src/chance/Chance.kt" />
+        <option value="$PROJECT_DIR$/test/unit/OrderableTest.kt" />
+        <option value="$PROJECT_DIR$/src/quantity/RatioQuantity.kt" />
+        <option value="$PROJECT_DIR$/src/quantity/IntervalQuantity.kt" />
       </list>
     </option>
   </component>
@@ -414,12 +441,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="QuantityTest - 2018.07.07 at 09h 40m 01s.xml">
-      <configuration name="QuantityTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="QuantityTest - 2018.07.07 at 09h 47m 00s.xml">
-      <configuration name="QuantityTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="QuantityTest - 2018.07.07 at 09h 48m 39s.xml">
       <configuration name="QuantityTest" configurationId="JUnit" />
     </history-entry>
@@ -444,6 +465,12 @@
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.10 at 11h 48m 13s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.10 at 13h 51m 11s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="OrderableTest - 2018.07.10 at 13h 51m 17s.xml">
+      <configuration name="OrderableTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
@@ -451,7 +478,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
+      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.32960895" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -459,11 +486,11 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="0" y="353" width="1828" height="281" id="Run" order="2" type="SLIDING" visible="true" weight="0.31284916" />
+      <window_info anchor="bottom" auto_hide="true" x="0" y="353" width="1828" height="281" id="Run" order="2" type="SLIDING" weight="0.31284916" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12910284" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12910284" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -695,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="635">
-          <caret line="33" column="48" selection-start-line="33" selection-start-column="48" selection-end-line="33" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -716,20 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="34" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quantity/IntervalQuantity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quantity/RatioQuantity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -757,13 +763,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/OrderableTest.kt">
+    <entry file="file://$PROJECT_DIR$/src/order/Orderable.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="22">
+          <caret line="1" column="36" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -774,13 +777,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/order/Orderable.kt">
+    <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="88">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/OrderableTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="e#155#296#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/RatioQuantity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/IntervalQuantity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
