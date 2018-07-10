@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/rectangle/Rectangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/rectangle/Rectangle.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/RectangleTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/RectangleTest.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,23 +17,14 @@
     <splitter split-orientation="horizontal" split-proportion="0.46827134">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="QuantityTest.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/unit/QuantityTest.kt">
+          <file leaf-file-name="OrderableTest.kt" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test/unit/OrderableTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="148">
-                  <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+                <state relative-caret-position="220">
+                  <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
                   <folding>
-                    <element signature="e#155#283#0" expanded="true" />
+                    <element signature="n#!!doc" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="RectangleTest.kt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/unit/RectangleTest.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
                 </state>
               </provider>
             </entry>
@@ -42,29 +33,14 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="RatioQuantity.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/quantity/RatioQuantity.kt">
+          <file leaf-file-name="Orderable.kt" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/order/Orderable.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="66">
-                  <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="IntervalQuantity.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/quantity/IntervalQuantity.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Unit.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/quantity/Unit.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="712">
-                  <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
+                <state relative-caret-position="374">
+                  <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -72,8 +48,8 @@
           <file leaf-file-name="Rectangle.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+                <state relative-caret-position="528">
+                  <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
                 </state>
               </provider>
             </entry>
@@ -87,6 +63,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
       </list>
     </option>
   </component>
@@ -123,6 +100,8 @@
         <option value="$PROJECT_DIR$/src/quantity/Unit.kt" />
         <option value="$PROJECT_DIR$/test/unit/QuantityTest.kt" />
         <option value="$PROJECT_DIR$/test/unit/RectangleTest.kt" />
+        <option value="$PROJECT_DIR$/test/unit/OrderableTest.kt" />
+        <option value="$PROJECT_DIR$/src/order/Orderable.kt" />
         <option value="$PROJECT_DIR$/src/rectangle/Rectangle.kt" />
       </list>
     </option>
@@ -137,10 +116,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="490" />
-    <option name="y" value="21" />
-    <option name="width" value="2739" />
-    <option name="height" value="1668" />
+    <option name="x" value="155" />
+    <option name="y" value="7" />
+    <option name="width" value="2310" />
+    <option name="height" value="1649" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -172,6 +151,12 @@
               <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
               <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="quantity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -195,9 +180,85 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="58d84e3e:PackageViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="rectangle" type="cbb8eebc:String" user="rectangle" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+              <item name="unit" type="cbb8eebc:String" user="unit" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <subPane subId="Tests">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="cbb8eebc:String" user="oo_boot_camp_2018-07-03_kotlin" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+              <item name="unit" type="cbb8eebc:String" user="unit" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,36 +423,37 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" auto_hide="true" x="0" y="353" width="1828" height="281" id="Run" order="2" type="SLIDING" visible="true" weight="0.31284916" />
       <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" auto_hide="true" x="0" y="353" width="1828" height="281" id="Run" order="2" type="SLIDING" weight="0.31284916" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12910284" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12910284" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -401,6 +463,51 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/test/unit/QuantityTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding>
+            <element signature="e#155#283#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/RectangleTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/RatioQuantity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/IntervalQuantity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/Unit.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1562">
+          <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/QuantityTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="968">
@@ -604,7 +711,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/QuantityTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="968">
           <caret line="51" column="41" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
           <folding>
             <element signature="e#155#283#0" expanded="true" />
@@ -614,7 +721,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Unit.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="712">
+        <state relative-caret-position="1562">
           <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
         </state>
       </provider>
@@ -622,14 +729,34 @@
     <entry file="file://$PROJECT_DIR$/test/unit/RectangleTest.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="26" column="68" lean-forward="true" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+          <caret line="26" column="68" selection-start-line="26" selection-start-column="68" selection-end-line="26" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/OrderableTest.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/order/Orderable.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="70" selection-start-line="10" selection-start-column="70" selection-end-line="10" selection-end-column="70" />
+        <state relative-caret-position="528">
+          <caret line="28" column="72" selection-start-line="28" selection-start-column="72" selection-end-line="28" selection-end-column="72" />
         </state>
       </provider>
     </entry>
