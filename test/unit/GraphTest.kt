@@ -43,7 +43,7 @@ class GraphTest {
         assertEquals(1, b.hopCount(a))
         assertEquals(1, b.hopCount(f))
         assertEquals(2, b.hopCount(d))
-        assertEquals(4, c.hopCount(f))
+        assertEquals(3, c.hopCount(f))
         assertFailsWith(IllegalArgumentException::class) { g.hopCount(b) }
         assertFailsWith(IllegalArgumentException::class) { a.hopCount(b) }
         assertFailsWith(IllegalArgumentException::class) { b.hopCount(g) }

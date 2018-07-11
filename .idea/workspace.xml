@@ -20,8 +20,8 @@
           <file leaf-file-name="GraphTest.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/unit/GraphTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="588">
-                  <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+                <state relative-caret-position="522">
+                  <caret line="42" selection-start-line="42" selection-end-line="42" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#155#283#0" expanded="true" />
@@ -37,8 +37,8 @@
           <file leaf-file-name="Node.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+                <state relative-caret-position="624">
+                  <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -96,8 +96,8 @@
         <option value="$PROJECT_DIR$/test/unit/OrderableTest.kt" />
         <option value="$PROJECT_DIR$/src/Graph.kt" />
         <option value="$PROJECT_DIR$/src/graph/Graph.kt" />
-        <option value="$PROJECT_DIR$/src/graph/Node.kt" />
         <option value="$PROJECT_DIR$/test/unit/GraphTest.kt" />
+        <option value="$PROJECT_DIR$/src/graph/Node.kt" />
       </list>
     </option>
   </component>
@@ -419,12 +419,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="OrderableTest - 2018.07.10 at 14h 02m 43s.xml">
-      <configuration name="OrderableTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="OrderableTest - 2018.07.11 at 09h 33m 01s.xml">
-      <configuration name="OrderableTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="OrderableTest - 2018.07.11 at 10h 39m 02s.xml">
       <configuration name="OrderableTest" configurationId="JUnit" />
     </history-entry>
@@ -447,6 +441,12 @@
       <configuration name="OrderableTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 11h 44m 53s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 11h 47m 51s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 11h 49m 50s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -847,21 +847,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="27" column="30" lean-forward="true" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/GraphTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        <state relative-caret-position="522">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#155#283#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
         </state>
       </provider>
     </entry>
