@@ -22,22 +22,21 @@ class Node {
             if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}
     }
 
-    private fun hopCount(destination: Node, visitedNodes: MutableList<Node>): Int {
+    private fun hopCount(destination: Node, visitedNodes: List<Node>): Int {
         if (this == destination) return 0
         if (visitedNodes.contains(this)) return unreachable
         return neighborHopCount(destination, visitedNodes)
     }
 
-    private fun neighborHopCount(destination: Node, visitedNodes: MutableList<Node>): Int {
-        visitedNodes.add(this)
+    private fun neighborHopCount(destination: Node, visitedNodes: List<Node>): Int {
         var champion = unreachable
         for (n in neighbors) {
-            val challenger = n.hopCount(destination, visitedNodes)
+            val challenger = n.hopCount(destination, visitedNodes + this)
             if (challenger == unreachable) continue
             if (champion == unreachable || challenger + 1 < champion) champion = challenger + 1
         }
         return champion
     }
 
-    private val noVisitedNodes get() = mutableListOf<Node>()
+    private val noVisitedNodes get() = listOf<Node>()
 }
