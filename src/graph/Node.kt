@@ -15,19 +15,11 @@ class Node {
         return neighbor
     }
 
-    fun canReach(destination: Node) = canReach(destination, noVisitedNodes)
-
-    private fun canReach(destination: Node, visitedNodes: MutableList<Node>): Boolean {
-        if (this == destination) return true
-        if (visitedNodes.contains(this)) return false
-        visitedNodes.add(this)
-        return neighbors.any { it.canReach(destination, visitedNodes) }
-    }
+    fun canReach(destination: Node) = hopCount(destination, noVisitedNodes) != unreachable
 
     fun hopCount(destination: Node): Int {
-        val result = hopCount(destination, noVisitedNodes)
-        if (result == unreachable) throw IllegalArgumentException("Unreachable destination")
-        return result
+        return hopCount(destination, noVisitedNodes).apply {
+            if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}
     }
 
     private fun hopCount(destination: Node, visitedNodes: MutableList<Node>): Int {
