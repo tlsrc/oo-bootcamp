@@ -48,4 +48,15 @@ class GraphTest {
         assertFailsWith(IllegalArgumentException::class) { a.hopCount(b) }
         assertFailsWith(IllegalArgumentException::class) { b.hopCount(g) }
     }
+
+    @Test fun cost() {
+        assertEquals(0.0, b.cost(b))
+        assertEquals(5.0, b.cost(a))
+        assertEquals(4.0, b.cost(f))
+        assertEquals(7.0, b.cost(d))
+        assertEquals(10.0, c.cost(f))
+        assertFailsWith(IllegalArgumentException::class) { g.cost(b) }
+        assertFailsWith(IllegalArgumentException::class) { a.cost(b) }
+        assertFailsWith(IllegalArgumentException::class) { b.cost(g) }
+    }
 }

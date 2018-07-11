@@ -29,6 +29,19 @@ class Node {
                 .min() ?: unreachable
     }
 
+    fun cost(destination: Node): Double {
+        return cost(destination, noVisitedNodes).apply {
+            if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}
+    }
+
+    internal fun cost(destination: Node, visitedNodes: List<Node>): Double {
+        if (this == destination) return 0.0
+        if (visitedNodes.contains(this)) return unreachable
+        return links
+                .map { it.cost(destination, visitedNodes + this) }
+                .min() ?: unreachable
+    }
+
     private val noVisitedNodes get() = listOf<Node>()
 
     class LinkBuilder internal constructor(private val cost: Number, private val links: MutableList<Link>) {
