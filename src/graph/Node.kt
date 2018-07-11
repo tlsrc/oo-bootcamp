@@ -8,10 +8,10 @@ package graph
 // Understands its neighbors
 class Node {
     private val unreachable = Double.POSITIVE_INFINITY
-    private val neighbors = mutableListOf<Node>()
+    private val links = mutableListOf<Link>()
 
     fun to(neighbor: Node): Node {
-        neighbors.add(neighbor)
+        links.add(Link(neighbor))
         return neighbor
     }
 
@@ -22,11 +22,11 @@ class Node {
             if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}.toInt()
     }
 
-    private fun hopCount(destination: Node, visitedNodes: List<Node>): Double {
+    internal fun hopCount(destination: Node, visitedNodes: List<Node>): Double {
         if (this == destination) return 0.0
         if (visitedNodes.contains(this)) return unreachable
-        return neighbors
-                .map { it.hopCount(destination, visitedNodes + this) + 1 }
+        return links
+                .map { it.hopCount(destination, visitedNodes + this) }
                 .min() ?: unreachable
     }
 
