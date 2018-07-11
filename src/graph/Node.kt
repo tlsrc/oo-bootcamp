@@ -25,6 +25,7 @@ class Node {
     private fun hopCount(destination: Node, visitedNodes: MutableList<Node>): Int {
         if (this == destination) return 0
         if (visitedNodes.contains(this)) return unreachable
+        visitedNodes.add(this)
         for (n in neighbors) {
             val neighborHopCount = n.hopCount(destination, visitedNodes)
             if (neighborHopCount != unreachable) return neighborHopCount + 1
