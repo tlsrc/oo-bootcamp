@@ -7,7 +7,7 @@ package graph
 
 // Understands its neighbors
 class Node {
-    private val unreachable = -1
+    private val unreachable = Double.POSITIVE_INFINITY
     private val neighbors = mutableListOf<Node>()
 
     fun to(neighbor: Node): Node {
@@ -19,21 +19,20 @@ class Node {
 
     fun hopCount(destination: Node): Int {
         return hopCount(destination, noVisitedNodes).apply {
-            if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}
+            if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}.toInt()
     }
 
-    private fun hopCount(destination: Node, visitedNodes: List<Node>): Int {
-        if (this == destination) return 0
+    private fun hopCount(destination: Node, visitedNodes: List<Node>): Double {
+        if (this == destination) return 0.0
         if (visitedNodes.contains(this)) return unreachable
         return neighborHopCount(destination, visitedNodes)
     }
 
-    private fun neighborHopCount(destination: Node, visitedNodes: List<Node>): Int {
+    private fun neighborHopCount(destination: Node, visitedNodes: List<Node>): Double {
         var champion = unreachable
         for (n in neighbors) {
-            val challenger = n.hopCount(destination, visitedNodes + this)
-            if (challenger == unreachable) continue
-            if (champion == unreachable || challenger + 1 < champion) champion = challenger + 1
+            val challenger = n.hopCount(destination, visitedNodes + this) + 1
+            if (challenger < champion) champion = challenger
         }
         return champion
     }
