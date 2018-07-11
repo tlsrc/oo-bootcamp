@@ -10,9 +10,8 @@ class Node {
     private val unreachable = Double.POSITIVE_INFINITY
     private val links = mutableListOf<Link>()
 
-    fun to(neighbor: Node): Node {
-        links.add(Link(neighbor))
-        return neighbor
+    fun cost(amount: Number): LinkBuilder {
+        return LinkBuilder(amount, links)
     }
 
     fun canReach(destination: Node) = hopCount(destination, noVisitedNodes) != unreachable
@@ -31,4 +30,11 @@ class Node {
     }
 
     private val noVisitedNodes get() = listOf<Node>()
+
+    class LinkBuilder internal constructor(private val cost: Number, private val links: MutableList<Link>) {
+        fun to(target: Node): Node {
+            links.add(Link(cost.toDouble(), target))
+            return target
+        }
+    }
 }

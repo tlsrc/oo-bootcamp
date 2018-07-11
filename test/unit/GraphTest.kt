@@ -21,10 +21,10 @@ class GraphTest {
     private val g = Node()
 
     init {
-        b.to(a)
-        b.to(c).to(d).to(e).to(b).to(f)
-        c.to(d)
-        c.to(e)
+        b.cost(5).to(a)
+        b.cost(6).to(c).cost(7).to(d).cost(2).to(e).cost(3).to(b).cost(4).to(f)
+        c.cost(1).to(d)
+        c.cost(8).to(e)
     }
 
     @Test fun `can reach`() {
