@@ -8,6 +8,7 @@ package unit
 import graph.Node
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
+import kotlin.test.assertFailsWith
 
 // Ensure algorithms on directed graphs operate correctly
 class GraphTest {
@@ -35,5 +36,16 @@ class GraphTest {
         assertFalse(g.canReach(b))
         assertFalse(a.canReach(b))
         assertFalse(b.canReach(g))
+    }
+
+    @Test fun `hop count`() {
+        assertEquals(0, b.hopCount(b))
+        assertEquals(1, b.hopCount(a))
+        assertEquals(1, b.hopCount(f))
+        assertEquals(2, b.hopCount(d))
+        assertEquals(3, c.hopCount(f))
+        assertFailsWith(IllegalArgumentException::class) { g.hopCount(b) }
+        assertFailsWith(IllegalArgumentException::class) { a.hopCount(b) }
+        assertFailsWith(IllegalArgumentException::class) { b.hopCount(g) }
     }
 }
