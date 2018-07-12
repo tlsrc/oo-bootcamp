@@ -30,15 +30,15 @@ class Node {
     }
 
     fun cost(destination: Node): Double {
-        return cost(destination, noVisitedNodes).apply {
+        return cost(destination, noVisitedNodes, Link.leastCost).apply {
             if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}
     }
 
-    internal fun cost(destination: Node, visitedNodes: List<Node>): Double {
+    internal fun cost(destination: Node, visitedNodes: List<Node>, strategy: CostStrategy): Double {
         if (this == destination) return 0.0
         if (visitedNodes.contains(this)) return unreachable
         return links
-                .map { it.cost(destination, visitedNodes + this) }
+                .map { it.cost(destination, visitedNodes + this, strategy) }
                 .min() ?: unreachable
     }
 
