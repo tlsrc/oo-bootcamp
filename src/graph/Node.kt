@@ -10,27 +10,16 @@ class Node {
     private val unreachable = Double.POSITIVE_INFINITY
     private val links = mutableListOf<Link>()
 
-    fun cost(amount: Number): LinkBuilder {
-        return LinkBuilder(amount, links)
-    }
+    fun cost(amount: Number) = LinkBuilder(amount, links)
 
-    fun canReach(destination: Node) = hopCount(destination, noVisitedNodes) != unreachable
+    fun canReach(destination: Node) = cost(destination, noVisitedNodes, Link.leastCost) != unreachable
 
-    fun hopCount(destination: Node): Int {
-        return cost(destination, noVisitedNodes, Link.fewestHops).apply {
-            if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}.toInt()
-    }
+    fun hopCount(destination: Node) = cost(destination, Link.fewestHops).toInt()
 
-    internal fun hopCount(destination: Node, visitedNodes: List<Node>): Double {
-        if (this == destination) return 0.0
-        if (visitedNodes.contains(this)) return unreachable
-        return links
-                .map { it.hopCount(destination, visitedNodes + this) }
-                .min() ?: unreachable
-    }
+    fun cost(destination: Node) = cost(destination, Link.leastCost)
 
-    fun cost(destination: Node): Double {
-        return cost(destination, noVisitedNodes, Link.leastCost).apply {
+    private fun cost(destination: Node, strategy: CostStrategy): Double {
+        return cost(destination, noVisitedNodes, strategy).apply {
             if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}
     }
 
