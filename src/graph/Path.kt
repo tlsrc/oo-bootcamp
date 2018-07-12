@@ -8,18 +8,33 @@ package graph
 import kotlin.Double.Companion.POSITIVE_INFINITY
 
 // Understands a way to get to a specific Node
-class Path {
+abstract class Path {
     companion object {
         internal val leastCost = { p: Path? -> p?.cost ?: POSITIVE_INFINITY }
         internal val hopCount = { p: Path? -> p?.hopCount?.toDouble() ?: POSITIVE_INFINITY }
+        internal val actual get() = ActualPath()
     }
-    private val links = mutableListOf<Link>()
+    abstract val hopCount: Int
+    abstract val cost: Double
+    internal open fun prepend(link: Link) {}
 
-    internal fun prepend(link: Link) = links.add(0, link)
+    internal class ActualPath: Path() {
 
-    val hopCount get() = links.count()
+        private val links = mutableListOf<Link>()
 
-    val cost get() = Link.totalCost(links)
+        override fun prepend(link: Link) = links.add(0, link)
+
+        override val hopCount get() = links.count()
+
+        override val cost get() = Link.totalCost(links)
+    }
+
+    internal object None: Path() {
+
+        override val hopCount get() = Int.MAX_VALUE
+
+        override val cost get() = Double.POSITIVE_INFINITY
+    }
 }
 
 internal typealias PathStrategy = (Path?) -> Double

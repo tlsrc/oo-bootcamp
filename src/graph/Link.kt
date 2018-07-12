@@ -11,9 +11,7 @@ class Link(private val cost: Double, private val target: Node) {
         internal fun totalCost(links: List<Link>) = links.sumByDouble { it.cost }
     }
 
-    internal fun path(destination: Node, visitedNodes: List<Node>, strategy: PathStrategy): Path? {
-        return target.path(destination, visitedNodes, strategy)?.apply { this.prepend(this@Link) }
+    internal fun path(destination: Node, visitedNodes: List<Node>, strategy: PathStrategy): Path {
+        return target.path(destination, visitedNodes, strategy).apply { this.prepend(this@Link) }
     }
 }
-
-internal typealias CostStrategy = (Double) -> Double

@@ -7,12 +7,11 @@ package graph
 
 // Understands its neighbors
 class Node {
-    private val unreachable = Double.POSITIVE_INFINITY
     private val links = mutableListOf<Link>()
 
     fun cost(amount: Number) = LinkBuilder(amount, links)
 
-    fun canReach(destination: Node) = path(destination, noVisitedNodes, Path.leastCost) != null
+    fun canReach(destination: Node) = path(destination, noVisitedNodes, Path.leastCost) != Path.None
 
     fun hopCount(destination: Node) = path(destination, Path.hopCount).hopCount
 
@@ -21,16 +20,16 @@ class Node {
     fun path(destination: Node) = path(destination, Path.leastCost)
 
     private fun path(destination: Node, strategy: PathStrategy): Path {
-        return path(destination, noVisitedNodes, strategy)
-                ?: throw IllegalArgumentException("Unreachable destination")
+        return path(destination, noVisitedNodes, strategy).apply {
+                if (this == Path.None) throw IllegalArgumentException("Unreachable destination") }
     }
 
-    internal fun path(destination: Node, visitedNodes: List<Node>, strategy: PathStrategy): Path? {
-        if (this == destination) return Path()
-        if (visitedNodes.contains(this)) return null
+    internal fun path(destination: Node, visitedNodes: List<Node>, strategy: PathStrategy): Path {
+        if (this == destination) return Path.actual
+        if (visitedNodes.contains(this)) return Path.None
         return links
                 .map { it.path(destination, visitedNodes + this, strategy) }
-                .minBy { strategy(it) }
+                .minBy { strategy(it) } ?: Path.None
     }
 
     private val noVisitedNodes get() = listOf<Node>()

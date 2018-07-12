@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/graph/Link.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Link.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Node.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/Path.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Path.kt" afterDir="false" />
     </list>
@@ -20,8 +21,8 @@
           <file leaf-file-name="GraphTest.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/unit/GraphTest.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+                <state relative-caret-position="566">
+                  <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                     <element signature="e#155#283#0" expanded="true" />
@@ -37,8 +38,8 @@
           <file leaf-file-name="Node.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+                <state relative-caret-position="470">
+                  <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
                 </state>
               </provider>
             </entry>
@@ -46,8 +47,8 @@
           <file leaf-file-name="Link.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/graph/Link.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="352">
-                  <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+                <state relative-caret-position="220">
+                  <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
                 </state>
               </provider>
             </entry>
@@ -55,8 +56,8 @@
           <file leaf-file-name="Path.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/graph/Path.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+                <state relative-caret-position="184">
+                  <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
                 </state>
               </provider>
             </entry>
@@ -83,6 +84,7 @@
       <find>Quantity(6, tablespoon)</find>
       <find>RatioQuantity</find>
       <find>).</find>
+      <find>Path?</find>
     </findStrings>
     <replaceStrings>
       <replace>likely</replace>
@@ -91,6 +93,7 @@
       <replace>6.tablespoons</replace>
       <replace>IntervalQuantity</replace>
       <replace>.</replace>
+      <replace>Path</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -439,15 +442,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 45m 24s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 45m 48s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 49m 18s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 49m 54s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
@@ -467,6 +461,15 @@
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 13h 02m 19s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 14h 41m 29s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 14h 41m 37s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 14h 43m 28s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -846,8 +849,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/GraphTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="71" column="5" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="566">
+          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#155#283#0" expanded="true" />
@@ -857,22 +860,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Link.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
+        <state relative-caret-position="220">
+          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Path.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
+        <state relative-caret-position="184">
+          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="470">
+          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
         </state>
       </provider>
     </entry>
