@@ -11,6 +11,7 @@ import kotlin.Double.Companion.POSITIVE_INFINITY
 class Path {
     companion object {
         internal val leastCost = { p: Path? -> p?.cost ?: POSITIVE_INFINITY }
+        internal val hopCount = { p: Path? -> p?.hopCount?.toDouble() ?: POSITIVE_INFINITY }
     }
     private val links = mutableListOf<Link>()
 

@@ -12,28 +12,17 @@ class Node {
 
     fun cost(amount: Number) = LinkBuilder(amount, links)
 
-    fun canReach(destination: Node) = cost(destination, noVisitedNodes, Link.leastCost) != unreachable
+    fun canReach(destination: Node) = path(destination, noVisitedNodes, Path.leastCost) != null
 
-    fun hopCount(destination: Node) = cost(destination, Link.fewestHops).toInt()
+    fun hopCount(destination: Node) = path(destination, Path.hopCount).hopCount
 
-    fun cost(destination: Node) = cost(destination, Link.leastCost)
+    fun cost(destination: Node) = path(destination).cost
 
-    private fun cost(destination: Node, strategy: CostStrategy): Double {
-        return cost(destination, noVisitedNodes, strategy).apply {
-            if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}
-    }
+    fun path(destination: Node) = path(destination, Path.leastCost)
 
-    internal fun cost(destination: Node, visitedNodes: List<Node>, strategy: CostStrategy): Double {
-        if (this == destination) return 0.0
-        if (visitedNodes.contains(this)) return unreachable
-        return links
-                .map { it.cost(destination, visitedNodes + this, strategy) }
-                .min() ?: unreachable
-    }
-
-    fun path(destination: Node): Path {
-        return path(destination, noVisitedNodes, Path.leastCost).apply {
-            if (this == null) throw IllegalArgumentException("Unreachable destination")}!!
+    private fun path(destination: Node, strategy: PathStrategy): Path {
+        return path(destination, noVisitedNodes, strategy)
+                ?: throw IllegalArgumentException("Unreachable destination")
     }
 
     internal fun path(destination: Node, visitedNodes: List<Node>, strategy: PathStrategy): Path? {
