@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/oo_boot_camp_2018-07-03_kotlin/META-INF/oo_boot_camp_2018-07-03_kotlin.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/oo_boot_camp_2018-07-03_kotlin/META-INF/oo_boot_camp_2018-07-03_kotlin.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/oo_boot_camp_2018-07-03_kotlin/META-INF/oo_boot_camp_2018-07-03_kotlin.kotlin_module" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/Link.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Link.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/graph/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/unit/GraphTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/test/unit/GraphTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/graph/Path.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Path.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +40,8 @@
           <file leaf-file-name="Node.kt" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="183">
-                  <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+                <state relative-caret-position="-59">
+                  <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
                 </state>
               </provider>
             </entry>
@@ -49,8 +49,8 @@
           <file leaf-file-name="Link.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/graph/Link.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+                <state relative-caret-position="352">
+                  <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
                 </state>
               </provider>
             </entry>
@@ -58,8 +58,8 @@
           <file leaf-file-name="Path.kt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/graph/Path.kt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+                <state relative-caret-position="374">
+                  <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -442,21 +442,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 13h 58m 18s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 14h 01m 41s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 14h 02m 10s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 37m 26s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 40m 06s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 45m 24s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
@@ -472,6 +457,21 @@
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 50m 22s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 12h 51m 40s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 12h 54m 45s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 13h 01m 04s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 13h 01m 55s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 13h 02m 19s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
@@ -479,7 +479,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32960895" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -487,7 +487,7 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" auto_hide="true" x="0" y="353" width="1828" height="281" id="Run" order="2" type="SLIDING" weight="0.31284916" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="0" y="353" width="1828" height="281" id="Run" order="2" type="SLIDING" visible="true" weight="0.31284916" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
@@ -860,22 +860,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Path.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="374">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Link.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="10" column="57" lean-forward="true" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        <state relative-caret-position="352">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="44" column="31" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="31" />
+        <state relative-caret-position="-59">
+          <caret line="18" column="67" lean-forward="true" selection-start-line="18" selection-start-column="67" selection-end-line="18" selection-end-column="67" />
         </state>
       </provider>
     </entry>

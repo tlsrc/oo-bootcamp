@@ -17,8 +17,8 @@ class Link(private val cost: Double, private val target: Node) {
         return target.cost(destination, visitedNodes, strategy) + strategy(cost)
     }
 
-    internal fun path(destination: Node, visitedNodes: List<Node>): Path? {
-        return target.path(destination, visitedNodes)?.apply { this.prepend(this@Link) }
+    internal fun path(destination: Node, visitedNodes: List<Node>, strategy: PathStrategy): Path? {
+        return target.path(destination, visitedNodes, strategy)?.apply { this.prepend(this@Link) }
     }
 }
 

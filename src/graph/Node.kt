@@ -32,16 +32,16 @@ class Node {
     }
 
     fun path(destination: Node): Path {
-        return path(destination, noVisitedNodes).apply {
+        return path(destination, noVisitedNodes, Path.leastCost).apply {
             if (this == null) throw IllegalArgumentException("Unreachable destination")}!!
     }
 
-    internal fun path(destination: Node, visitedNodes: List<Node>): Path? {
+    internal fun path(destination: Node, visitedNodes: List<Node>, strategy: PathStrategy): Path? {
         if (this == destination) return Path()
         if (visitedNodes.contains(this)) return null
         return links
-                .map { it.path(destination, visitedNodes + this) }
-                .minBy { it?.cost ?: unreachable }
+                .map { it.path(destination, visitedNodes + this, strategy) }
+                .minBy { strategy(it) }
     }
 
     private val noVisitedNodes get() = listOf<Node>()
