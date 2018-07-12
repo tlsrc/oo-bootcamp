@@ -17,7 +17,7 @@ class Node {
     fun canReach(destination: Node) = hopCount(destination, noVisitedNodes) != unreachable
 
     fun hopCount(destination: Node): Int {
-        return hopCount(destination, noVisitedNodes).apply {
+        return cost(destination, noVisitedNodes, Link.fewestHops).apply {
             if (this == unreachable) throw IllegalArgumentException("Unreachable destination")}.toInt()
     }
 
