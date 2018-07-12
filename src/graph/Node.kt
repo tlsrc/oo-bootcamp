@@ -31,6 +31,19 @@ class Node {
                 .min() ?: unreachable
     }
 
+    fun path(destination: Node): Path {
+        return path(destination, noVisitedNodes).apply {
+            if (this == null) throw IllegalArgumentException("Unreachable destination")}!!
+    }
+
+    internal fun path(destination: Node, visitedNodes: List<Node>): Path? {
+        if (this == destination) return Path()
+        if (visitedNodes.contains(this)) return null
+        return links
+                .map { it.path(destination, visitedNodes + this) }
+                .minBy { it?.cost ?: unreachable }
+    }
+
     private val noVisitedNodes get() = listOf<Node>()
 
     class LinkBuilder internal constructor(private val cost: Number, private val links: MutableList<Link>) {
