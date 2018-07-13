@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2c6f941-b710-48c7-973e-138a39145e55" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/graph/Link.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Link.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Node.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/graph/Path.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/graph/Path.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,56 +13,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.38567838">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="GraphTest.kt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/test/unit/GraphTest.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="566">
-                  <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                    <element signature="e#155#283#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Node.kt" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="470">
-                  <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Link.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/graph/Link.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="220">
-                  <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Path.kt" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/graph/Path.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="184">
-                  <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="GraphTest.kt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/GraphTest.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="e#155#283#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chance.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,8 +91,8 @@
         <option value="$PROJECT_DIR$/src/graph/Graph.kt" />
         <option value="$PROJECT_DIR$/test/unit/GraphTest.kt" />
         <option value="$PROJECT_DIR$/src/graph/Link.kt" />
-        <option value="$PROJECT_DIR$/src/graph/Path.kt" />
         <option value="$PROJECT_DIR$/src/graph/Node.kt" />
+        <option value="$PROJECT_DIR$/src/graph/Path.kt" />
       </list>
     </option>
   </component>
@@ -133,11 +105,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="154" />
-    <option name="y" value="7" />
-    <option name="width" value="2310" />
-    <option name="height" value="1656" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-11" />
+    <option name="width" value="3215" />
+    <option name="height" value="1742" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -147,6 +118,64 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="chance" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="graph" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="quantity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rectangle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -225,64 +254,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="graph" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="quantity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="rectangle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="oo_boot_camp_2018-07-03_kotlin" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="unit" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,6 +280,10 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\dev\src\kotlin\oo_boot_camp_2018-07-03_kotlin" />
+      <recent name="C:\Users\dev\src\kotlin\oo_boot_camp_2018-07-03_kotlin\test_module" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -442,18 +417,6 @@
     </recent_temporary>
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 49m 54s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.11 at 20h 50m 22s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 12h 51m 40s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 12h 54m 45s.xml">
-      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 13h 01m 04s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
@@ -472,14 +435,25 @@
     <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 14h 43m 28s.xml">
       <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 14h 54m 41s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 14h 55m 10s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.12 at 14h 56m 02s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_oo_boot_camp_2018-07-03_kotlin - 2018.07.13 at 09h 01m 02s.xml">
+      <configuration name="All in oo_boot_camp_2018-07-03_kotlin" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1842" height="1002" extended-state="6" />
+    <frame x="-7" y="-7" width="1842" height="1002" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -491,7 +465,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.12910284" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12910284" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -506,6 +480,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32960895" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -805,13 +780,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/IntervalQuantity.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -847,10 +815,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/graph/Path.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/GraphTest.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="22">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#155#283#0" expanded="true" />
@@ -861,21 +836,21 @@
     <entry file="file://$PROJECT_DIR$/src/graph/Link.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="14" column="63" lean-forward="true" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/Path.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Node.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="52" selection-end-line="32" selection-end-column="52" />
+        <state relative-caret-position="88">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/chance/Chance.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
@@ -932,7 +907,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>oo_boot_camp_2018-07-03_kotlin</last-edited>
+          <last-edited>test_module</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
