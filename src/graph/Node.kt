@@ -19,6 +19,14 @@ class Node {
 
     fun path(destination: Node) = path(destination, Path.leastCost)
 
+    fun paths(destination: Node) = paths(destination, noVisitedNodes)
+
+    internal fun paths(destination: Node, visitedNodes: List<Node>): List<Path> {
+        if (this == destination) return listOf(Path.actual)
+        if (visitedNodes.contains(this)) return emptyList()
+        return links.flatMap { it.paths(destination, visitedNodes + this) }
+    }
+
     private fun path(destination: Node, strategy: PathStrategy): Path {
         return path(destination, noVisitedNodes, strategy).apply {
                 if (this == Path.None) throw IllegalArgumentException("Unreachable destination") }

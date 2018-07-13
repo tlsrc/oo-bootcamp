@@ -71,6 +71,17 @@ class GraphTest {
         assertFailsWith(IllegalArgumentException::class) { b.path(g) }
     }
 
+    @Test fun paths() {
+        assertEquals(1, a.paths(a).count())
+        assertEquals(1, b.paths(a).count())
+        assertEquals(1, b.paths(f).count())
+        assertEquals(2, b.paths(d).count())
+        assertEquals(3, c.paths(f).count())
+        assertEquals(0, g.paths(b).count())
+        assertEquals(0, b.paths(g).count())
+        assertEquals(0, a.paths(b).count())
+    }
+
     private fun assertPath(source: Node, destination: Node, expectedHopCount: Int, expectedCost: Number) {
         val p = source.path(destination)
         assertEquals(expectedHopCount, p.hopCount)
