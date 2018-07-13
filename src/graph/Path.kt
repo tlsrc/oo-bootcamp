@@ -10,8 +10,8 @@ import kotlin.Double.Companion.POSITIVE_INFINITY
 // Understands a way to get to a specific Node
 abstract class Path {
     companion object {
-        internal val leastCost = { p: Path? -> p?.cost ?: POSITIVE_INFINITY }
-        internal val hopCount = { p: Path? -> p?.hopCount?.toDouble() ?: POSITIVE_INFINITY }
+        internal val leastCost = { p: Path -> p.cost }
+        internal val hopCount = { p: Path -> p.hopCount.toDouble() }
         internal val actual get() = ActualPath()
     }
     abstract val hopCount: Int
@@ -37,4 +37,4 @@ abstract class Path {
     }
 }
 
-internal typealias PathStrategy = (Path?) -> Double
+internal typealias PathStrategy = (Path) -> Double
